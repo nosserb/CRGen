@@ -1,0 +1,96 @@
+/* Impression / export PDF : seul le document est conservé, mis en page A4. */
+@page {
+  size: A4;
+  margin: 16mm 15mm 18mm;
+}
+
+@media print {
+  body {
+    background: #fff;
+    font-size: 10.5pt;
+  }
+
+  .topbar,
+  .composer,
+  .stage-bar,
+  .doc-toolbar,
+  .toaster,
+  .skip-link,
+  .row-remove,
+  .add-row,
+  .btn--link,
+  .editable-icon,
+  .picker-chevron,
+  .due .icon-button--xs,
+  .sheet--empty,
+  .sheet--processing {
+    display: none !important;
+  }
+
+  .workspace {
+    display: block;
+    padding: 0;
+    max-width: none;
+  }
+
+  .sheet {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .doc-section,
+  .stage-body,
+  .source {
+    animation: none !important;
+  }
+
+  .doc-section {
+    break-inside: auto;
+    padding-top: 18pt;
+  }
+
+  .section-head {
+    break-after: avoid;
+  }
+
+  .actions-table tr,
+  .decision,
+  .check,
+  .info {
+    break-inside: avoid;
+  }
+
+  .editable {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .decision {
+    background: none;
+  }
+
+  .summary {
+    font-size: 12pt;
+  }
+
+  .owner-unassigned {
+    background: none;
+  }
+
+  .checkbox {
+    border-color: #555;
+  }
+
+  :focus,
+  :focus-visible,
+  .picker:focus-within {
+    box-shadow: none !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

@@ -1,0 +1,69 @@
+/*
+ * Jetons de design.
+ * Palette inspirée de l'identité d'Économie 80 : blancs francs, anthracite,
+ * accent prune ; capitales espacées en Lato ; angles vifs ; filets fins.
+ * Le serif (Source Serif 4) est réservé au document produit.
+ */
+:root {
+  --font-sans: 'Lato', 'Helvetica Neue', Arial, system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+
+  /* Neutres */
+  --canvas: #f4f3f0;
+  --paper: #ffffff;
+  --ink: #1e1e1e;
+  --ink-2: #434343;
+  --ink-3: #686868;
+  --ink-4: #929292;
+  --line: #e6e3de;
+  --line-2: #d4d0c9;
+  --anthracite: #2f2f2f;
+  --hover: #f7f6f3;
+
+  /* Accent */
+  --plum: #79146a;
+  --plum-700: #5f0f53;
+  --plum-50: #f8f0f6;
+  --plum-100: #efdcea;
+
+  /* États */
+  --ok: #2c6a4e;
+  --ok-50: #e9f3ed;
+  --warn: #8a5a00;
+  --warn-50: #fbf3e1;
+  --danger: #a0322b;
+  --danger-50: #fbeceb;
+
+  /* Lots — teintes sourdes, utilisées en pastille uniquement */
+  --lot-cvc: #3e6c8c;
+  --lot-thermique: #b0532c;
+  --lot-vrd: #5b7a3a;
+  --lot-economie: #79146a;
+  --lot-electricite: #a8841c;
+  --lot-architecture: #5d5d5d;
+  --lot-structure: #4b4d74;
+  --lot-general: #9a9a9a;
+
+  /* Formes */
+  --radius: 2px;
+  --radius-lg: 4px;
+  --shadow-paper: 0 1px 2px rgb(30 30 30 / 4%), 0 12px 32px -18px rgb(30 30 30 / 18%);
+  --shadow-pop: 0 2px 4px rgb(30 30 30 / 6%), 0 16px 40px -12px rgb(30 30 30 / 22%);
+  --focus: 0 0 0 2px var(--paper), 0 0 0 4px var(--plum);
+
+  /* Mouvement */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 140ms;
+  --t: 220ms;
+
+  /* Espacements */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+}
